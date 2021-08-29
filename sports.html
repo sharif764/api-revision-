@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css style link  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Sports</title>
+    <style>
+        .input,
+        .btn {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .btn {
+            background-image: linear-gradient(hotpink, tomato);
+        }
+
+        .input:focus {
+            background-color: black;
+            color: white;
+
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            background-color: skyblue;
+        }
+
+        .flexSection {
+            display: inline-flex;
+            margin-left: 22%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center" id="">Sports Club</h1>
+        <section class="flexSection">
+            <!-- for team  -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <input class="input" type="text" placeholder="Search for team" id="input-team">
+                <button class="btn mx-2" onclick="loadTeam()" id="team-btn">Search</button><br>
+            </div>
+
+            <!-- for players  -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <input class="input " type="text" placeholder="Search for playere" id="input-player">
+                <button class="btn mx-2" onclick="loadPlayer()" id="player-btn">Search</button><br>
+            </div>
+
+            <!-- for leagues  -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <input class="input" type="text" placeholder="Search for leagues" id="input-league">
+                <button class="btn mx-2" onclick="loadLeaguages()" id="leagues-btn">Search</button><br>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <!-- for sports -->
+                <input class="input" type="text" placeholder="Search for sports" id="input-sports">
+                <button class="btn mx-2" onclick="loadSports()" id="sports-btn">Search</button><br>
+            </div>
+        </section>
+
+    </header>
+    <main id="pat">
+        <section class="section" id="result-section">
+
+        </section>
+        <section id="all-section">
+            <!--  <img src="${team.strTeamBadge}"> -->
+        </section>
+        <section id="team-sec">
+
+        </section>
+    </main>
+    <!-- bootstrap javaScript link  -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="sports.js"></script>
+</body>
+
+</html>
