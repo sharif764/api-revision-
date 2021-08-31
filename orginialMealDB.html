@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap style sheet link  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .back {
+            background-color: red;
+        }
+
+        #body {
+            background-image: url(images/new1.jpg);
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .for-result {
+            background-image: url(images/resturant\ dianing\ room.jpg);
+        }
+
+        .main-headline {
+            font-size: 49px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>Al Rahman Caffe</title>
+</head>
+
+<body id="body">
+    <!-- header start  -->
+    <header class="">
+        <h1 class="text-center main-headline text-light">Al Rahman Caffe</h1>
+        <div>
+            <input type="text" placeholder="Type your favourite food" id="inpuMeal">
+            <button onclick="loadResturantInformationByName()" class="bg-danger text-light"
+                id="searchMeal">Search</button>
+        </div>
+        <!-- <div>
+            <input type="text" placeholder="Type your favourite food" id="inpuMeal">
+            <button class="bg-danger text-light" id="searchMeal">Search</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Type your favourite food" id="inpuMeal">
+            <button class="bg-danger text-light" id="searchMeal">Search</button>
+        </div>
+        <div>
+            <input type="text" placeholder="Type your favourite food" id="inpuMeal">
+            <button class="bg-danger text-light" id="searchMeal">Search</button>
+        </div> -->
+    </header>
+    <div id="show"></div>
+    <!-- header end  -->
+    <!-- main start  -->
+    <main id="main">
+
+    </main>
+    <!-- main end  -->
+    <!-- bootstrap js link  -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- js local file link  -->
+    <script src="orginialMealDB.js"></script>
+</body>
+
+</html>
